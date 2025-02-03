@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ethics Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="game-container"></div>
+  <script type="module">
+    import Game from './js/game.js';
+    
+    // Wait for DOM to be fully loaded
+    window.addEventListener('DOMContentLoaded', () => {
+      const game = new Game();
+      game.initialize();
+    });
+  </script>
+</body>
+</html>
